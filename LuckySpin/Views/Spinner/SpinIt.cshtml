@@ -1,5 +1,5 @@
 ﻿@model LuckySpin.Models.Spin
-<!-- TODO: Change this to the ViewModel-->
+<!-- TODO: Change model to a SpinItViewModel-->
 @inject LuckySpin.Models.TextTransformService Transform
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
@@ -7,10 +7,10 @@
 }
 <button onclick='history.go(0)'>Spin</button>
 <div>@Model.A</div><div>@Model.B</div><div>@Model.C</div>
-<h1> Lucky @Transform.numberToText(Model.Luck) </h1>
-<div style="width: 210px;font-size: 1.2em;">
-    <a asp-action="LuckList" style="color: black;">Current Balance</a>:
-    <span style="font-weight: bolder;color: #811;">$11.50</span>
+<div class="balance">
+    Current Balance: $<span class="emphasis">@ViewBag.Balance</span>
 </div>
-<h2 style="display:@ViewBag.Display">@ViewBag.FirstName, You Win!</h2>
-<img src="/Images/LuckySpinCoins.jpg" class="animated bounce" alt="Coins" style="display:@ViewBag.Display" />
+<span style="display:@ViewBag.ImgDisplay">
+    <h2 style="margin-left:0">Congratulations @ViewBag.FirstName,<br />You Win with Lucky Two!</h2>
+    <img src="/Images/LuckySpinCoins.jpg" class="animated bounce" alt="Coins" />
+</span>

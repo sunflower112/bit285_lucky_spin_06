@@ -55,6 +55,23 @@ img {
     border-bottom-left-radius: 50% 50%;
 }
 
+.balance {
+    width: 210px;
+    font-size: 1.2em;
+    display:block;
+    margin-top:10px;
+}
+.balance .emphasis {
+    font-weight: bolder;
+    color: #811;
+}
+input.currency{
+    width:90%;
+    border-radius:0;
+}
+.winner{
+    background-color:lightgreen;
+}
 .field-validation-error {
     font-size: .8em;
     font-family: Arial Black,Arial,sans-serif;

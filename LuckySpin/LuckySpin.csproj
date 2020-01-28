@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="ViewComponents\PlayerNotice.cs" />
-    <Compile Remove="Models\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Shared\Components\PlayerNotice\Index.cshtml" />
