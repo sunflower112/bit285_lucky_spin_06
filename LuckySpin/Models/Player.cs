@@ -8,10 +8,10 @@ namespace LuckySpin.Models
         [Required(ErrorMessage = "Please enter your Name", AllowEmptyStrings = false)]
         public string FirstName { get; set; }
 
-        [Range(1, 9, ErrorMessage = "Choose a number")]
+        [Range(1, 9, ErrorMessage = "Choose a Lucky number")]
         public int Luck { get; set; }
 
-        [Display(Prompt = " Starting Balance $3 to $10")]
+        [Display(Prompt = " Enter Starting Balance $3 to $10")]
         public Decimal StartingBalance { get; set; }
 
         /*
